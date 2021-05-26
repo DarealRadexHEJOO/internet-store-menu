@@ -1,0 +1,392 @@
+body {
+	background-color: aliceblue;
+}
+
+.b-main {
+	position: relative;
+	top: 15px;
+	left: 15px;
+	width: 99px;
+    height: 35px;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    line-height: 35px;
+	border-radius: 5px;
+	border: 1px solid #C3C7C8;
+	background-color: #FFFFFF;
+	/*border: none*/
+}
+
+.b-main:hover {
+	cursor:pointer;
+}
+
+.b-main:active {
+	background-color: #0090F6;
+}
+
+.pop-up {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 745px;
+	height: 384px;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	z-index: 1;
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.pop-up-component {
+	position: absolute;
+}
+
+#console-pic {
+	left: 59px;
+	top: 105px;
+}
+
+#pop-up-x {
+	top: 23px;
+	right: 18px;
+}
+
+#pop-up-x:hover {
+	cursor:pointer;
+}
+
+#nazwa {
+	left: 357px;
+	top: 23px;
+	width: 310px;
+	height: 30px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: left;
+}
+
+#cena {
+	left: 357px;
+	top: 66px;
+	width: 66px;
+	height: 16px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #0090F6;
+	font-size: 15px;
+	text-align: left;
+}
+
+#rozmiar {
+	left: 357px;
+	top: 99px;
+	width: 49px;
+	height: 11px;
+	font-family: Arial;
+	font-size: 12px;
+	text-align: left;
+}
+
+#rozmiar-a {
+	left: 356px;
+	top: 119px;
+	width: 99px;
+	height: 35px;
+	font-family: Arial;
+	font-size: 11px;
+	text-align: center;
+	line-height: 35px;
+	border: 1px solid #C3C7C8;
+	border-radius: 5px;
+}
+
+#rozmiar-a:hover {
+	cursor:pointer;
+}
+
+#rozmiar-b {
+	left: 470px;
+	top: 119px;
+	width: 99px;
+	height: 35px;
+	font-family: Arial;
+	font-size: 11px;
+	text-align: center;
+	line-height: 35px;
+	border: 1px solid #C3C7C8;
+	border-radius: 5px;
+}
+
+#rozmiar-b:hover {
+	cursor:pointer;
+}
+
+#rozmiar-c {
+	left: 584px;
+	top: 119px;
+	width: 99px;
+	height: 35px;
+	font-family: Arial;
+	font-size: 11px;
+	text-align: center;
+	line-height: 35px;
+	border: 1px solid #C3C7C8;
+	border-radius: 5px;
+}
+
+#rozmiar-c:hover {
+	cursor:pointer;
+}
+
+.rozmiar-selected {
+	border: 2px solid #0090F6;
+}
+
+#wariant {
+	left: 356px;
+	top: 176px;
+	width: 47px;
+	height: 11px;
+	font-family: Arial;
+	font-size: 12px;
+	text-align: left;
+}
+
+#warianty {
+	left: 356px;
+	top: 196px;
+	width: 369px;
+	height: 35px;
+	font-family: Arial;
+	font-size: 11px;
+	text-align: left;
+	line-height: 35px;
+    padding-left: 13px;
+	border: 1px solid #C3C7C8;
+	border-radius: 5px;
+}
+
+#dost-im {
+	left: 356px;
+	top: 252px;
+}
+
+#dost-txt {
+	left: 383px;
+	top: 254px;
+	width: 101px;
+	height: 13px;
+	font-family: Arial;
+	font-size: 12px;
+	text-align: left;
+}
+
+#clock-im {
+	left: 509px;
+	top: 252px;
+}
+
+#wysl-txt {
+	left: 537px;
+	top: 249px;
+	width: 155px;
+	height: 13px;
+	font-family: Arial;
+	font-size: 12px;
+	text-align: left;
+}
+
+#czas-koszt {
+	left: 536px;
+	top: 265px;
+	width: 178px;
+	height: 13px;
+	font-family: Arial;
+	font-size: 12px;
+	text-align: left;
+	text-decoration: none;
+}
+
+#counter {
+	left: 356px;
+	top: 298px;
+	width: 140px;
+	height: 50px;
+	font-family: Arial;
+	font-size: 13px;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid #C3C7C8;
+	border-radius: 5px;
+}
+
+#plus {
+	left: 447px;
+	top: 299px;
+	width: 50px;
+	height: 50px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 0 5px 5px 0;
+}
+
+#plus:hover {
+	cursor:pointer;
+	background-color: #0090F6;
+}
+
+
+#minus {
+	left: 357px;
+	top: 299px;
+	width: 50px;
+	height: 50px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 5px 0 0 5px;
+}
+
+#minus:hover {
+	cursor:pointer;
+	background-color: #0090F6;
+}
+
+
+#dodaj {
+	left: 508px;
+	top: 298px;
+	width: 218px;
+	height: 50px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 50px;
+	background-color: #0090F6;
+	border-radius: 5px;
+}
+
+#dodaj:hover {
+	cursor:pointer;
+}
+
+@media only screen and (max-width: 744px) {
+	.pop-up {
+		position: relative;
+		width: 466px;
+		height: 610px;
+	}
+	
+	#console-pic {
+		left: 130px;
+		top: 50px;
+	}
+	
+	#pop-up-x {
+		
+	}
+	
+	#nazwa {
+		left: 79px;
+		top: 260px;
+	}
+	
+	#cena {
+		left: 78px;
+		top: 303px;
+	}
+	
+	#rozmiar {
+		left: 78px;
+		top: 336px;
+	}
+	
+	#rozmiar-a {
+		left: 77px;
+		top: 356px;
+	}
+	
+	#rozmiar-b {
+		left: 191px;
+		top: 356px;
+	}
+	
+	#rozmiar-c {
+		left: 305px;
+		top: 356px;
+	}
+	
+	#wariant {
+		left: 77px;
+		top: 413px;
+	}
+	
+	#warianty {
+		left: 77px;
+		top: 433px;
+		width: 350px;
+	}
+	
+	#dost-im {
+		left: 77px;
+		top: 489px;
+	}
+	
+	#dost-txt {
+		left: 104px;
+		top: 491px;
+	}
+	
+	#clock-im {
+		left: 230px;
+		top: 489px;
+	}
+	
+	#wysl-txt {
+		left: 258px;
+		top: 486px;
+	}
+	
+	#czas-koszt {
+		left: 257px;
+		top: 502px;
+	}
+	
+	#counter {
+		left: 77px;
+		top: 535px;
+	}
+	
+	#plus {
+		left: 168px;
+		top: 536px;
+	}
+	
+	#minus {
+		left: 78px;
+		top: 536px;
+	}
+	
+	#dodaj {
+		left: 229px;
+		top: 535px;
+		width: 199px;
+	}
+}
